@@ -12,7 +12,8 @@ import CarName from './car/carName';
 import CarNumber from './car/carNumber';
 import PickDate from './commons/pickDate';
 import DatePicker from './commons/app-datePicker';
-
+import DriveList from './drive/driveList';
+import InsertDrive from './drive/insertDrive';
 
 var Template = React.createClass({
   render:function(){
@@ -45,6 +46,8 @@ var App = React.createClass({
         <Route path="carName" component={CarName} />
         <Route path="carNumber" component={CarNumber} />
         <Route path="updateCar" component={UpdateCar} />
+        <Route path="driveList" component={DriveList} />
+        <Route path="insertDrive" component={InsertDrive} />
       </Router>
     )
   }

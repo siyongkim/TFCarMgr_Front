@@ -22,14 +22,16 @@ class Menu extends React.Component{
         </div>
         <div className="row">
           <center>
-            <div className="col-xs-6" id="menuLeft">
-              <div className="well well-lg" style={{bgcolor:'#ffffff'}}>
-                <span style={{color:'#00bcd4'}}><span className="fa fa-car" style={{bgcolor:'#00bcd4', fontSize:'30px'}}></span></span>
-                 <font style={{fontSize:'20px'}}>주행거리 </font>
-                <br />
-                <font style={{fontSize:'13px', fontWeight:'bold'}}>5km</font>
+            <Link to="driveList">
+              <div className="col-xs-6" id="menuLeft">
+                <div className="well well-lg" style={{bgcolor:'#ffffff'}}>
+                  <span style={{color:'#00bcd4'}}><span className="fa fa-car" style={{bgcolor:'#00bcd4', fontSize:'30px'}}></span></span>
+                   <font style={{fontSize:'20px'}}>주행거리 </font>
+                  <br />
+                  <font style={{fontSize:'13px', fontWeight:'bold'}}>5km</font>
+                </div>
               </div>
-            </div>
+            </Link>
             <div className="col-xs-6" id="menuRight">
               <div className="well well-lg" style={{bgcolor:'#ffffff'}}>
                 <span style={{color:'#00bcd4'}}><span className="fa fa-tint" style={{bgcolor:'#00bcd4', fontSize:'30px'}}></span></span>
