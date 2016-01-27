@@ -10,7 +10,8 @@ import InsertCar from './car/insertCar';
 import UpdateCar from './car/updateCar';
 import CarName from './car/carName';
 import CarNumber from './car/carNumber';
-// import PickDate from './commons/pickDate';
+import PickDate from './commons/pickDate';
+import DatePicker from './commons/app-datePicker';
 
 
 var Template = React.createClass({
@@ -19,9 +20,8 @@ var Template = React.createClass({
       <div className="container">
         <div className="row">
           <Header />
-          
+          <DatePicker />
         </div>
-        <br />
         <div className="row">
       <div>
         <Menu />

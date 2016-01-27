@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactBootstrap from 'react-bootstrap';
-
+import GetDate from './getDate'
 class DatePicker extends React.Component{
   constructor(){
     super();
@@ -11,12 +10,12 @@ class DatePicker extends React.Component{
         <center>
         <div className="col-xs-6" id="dateLeft">
           <div className="well well-sm" style={{bgcolor:'#ffffff'}}>
-            2016년01월01일
+            <span style={{fontSize:'14px', fontWeight:'bold'}}><GetDate flag='first'/></span>
           </div>
         </div>
         <div className="col-xs-6" id="dateRight">
           <div className="well well-sm" style={{bgcolor:'#ffffff'}}>
-            2016년01월31일
+            <span style={{fontSize:'14px', fontWeight:'bold'}}><GetDate flag='last'/></span>
           </div>
         </div>
         </center>
